@@ -18,7 +18,7 @@ print(df.shape)
 print(df.isnull().any())
 
 # Rename columns
-df.rename(columns={'Spending Score (1-100)': 'Spending Score', 'Annual Income (k$)': 'Annual Income'}, inplace=True)
+df.rename(columns={'Spending Score (1-100)': 'Spending Score', 'Annual Income (k$)': 'Annual Income', 'Genre':'Gender'}, inplace=True)
 
 # Separate the dataset into features (X) and labels (y)
 y = df['Spending Score']
